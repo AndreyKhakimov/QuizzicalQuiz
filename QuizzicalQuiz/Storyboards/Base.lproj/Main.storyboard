@@ -269,13 +269,7 @@
                             </constraint>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Вопрос №" id="iIk-Qf-yqn">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="oZ5-NJ-9WE">
-                            <connections>
-                                <segue destination="egA-RM-b3p" kind="show" id="kVC-4z-R3A"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Вопрос №" id="iIk-Qf-yqn"/>
                     <connections>
                         <outlet property="multipleStackView" destination="vgv-fy-Nrd" id="ZSg-kG-rrY"/>
                         <outlet property="questionLabel" destination="kAk-VK-obf" id="1V9-gi-pON"/>
@@ -321,8 +315,8 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваша сила - в мудрости. Медленный и вдумчивый выигрывает на больших дистанциях." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGV-As-dzh">
-                                        <rect key="frame" x="40.5" y="60" width="207" height="81.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваша сила - в мудрости. Медленный и вдумчивый выигрывает на больших дистанциях." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGV-As-dzh">
+                                        <rect key="frame" x="0.0" y="60" width="288" height="81.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -346,6 +340,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="resultDescriptionLabel" destination="WGV-As-dzh" id="yvW-JC-liq"/>
+                        <outlet property="resultLabel" destination="9wg-xm-43n" id="3wI-1W-cdO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qml-sl-SWS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="cy9-C4-zCp" userLabel="Exit" sceneMemberID="exit"/>
@@ -371,9 +369,6 @@
             <point key="canvasLocation" x="873.91304347826099" y="67.633928571428569"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="NHC-Hz-6wQ"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

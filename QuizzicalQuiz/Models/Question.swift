@@ -5,14 +5,14 @@
 //  Created by Andrey Khakimov on 03.11.2021.
 //
 
-struct Qustion {
+struct Question {
     let title: String
     let type: ResponseType
     let answers: [Answer]
     
-    static func getQuestions() -> [Qustion] {
+    static func getQuestions() -> [Question] {
         [
-            Qustion(
+            Question(
                 title: "Какую пищу вы предпочитаете?",
                 type: .single,
                 answers: [
@@ -22,7 +22,7 @@ struct Qustion {
                     Answer(title: "Кукуруза", animal: .turtle),
                 ]
             ),
-            Qustion(
+            Question(
                 title: "Что вам нравится больше?",
                 type: .multiple,
                 answers: [
@@ -32,7 +32,7 @@ struct Qustion {
                     Answer(title: "Есть", animal: .dog),
                 ]
             ),
-            Qustion(
+            Question(
                 title: "Любите ли вы поездки на машине?",
                 type: .ranged,
                 answers: [
@@ -70,9 +70,9 @@ enum Animal: Character {
         case .cat:
             return "Вы себе на уме. Любите гулять сами по себе. Вы цените одиночество"
         case .rabbit:
-            return "Э"
+            return "Вам нравится все мягкое. Вы здоровы и полны энергии."
         case .turtle:
-            return "ии"
+            return "Ваша сила - в мудрости. Медленный и вдумчивый выигрывает на больших дистанциях"
         }
     }
 }
