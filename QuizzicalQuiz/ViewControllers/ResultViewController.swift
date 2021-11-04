@@ -25,7 +25,7 @@ class ResultViewController: UIViewController {
 }
 
 extension ResultViewController {
-    func calculateAnimal(from answers: [Answer]) -> Animal.RawValue {
+   private func calculateAnimal(from answers: [Answer]) -> Animal.RawValue {
         let animals = answers.map { $0.animal }
         
         var dogPoints = 0
